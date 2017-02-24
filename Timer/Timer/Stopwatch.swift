@@ -9,9 +9,7 @@
 import Foundation
 
 class Stopwatch {
-    var timePassed = dateObject.timeIntervalSinceNow
-
-    func initiate(_timer: Timer) {
-        
-    }
+//    var timePassed = dateObject.timeIntervalSinceNow
+//    func initiate(_timer: Timer) {
+//    }
 }
