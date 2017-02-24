@@ -509,6 +509,7 @@
 				AD5DB9141E569BCD00DC44F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD5DB9151E569BCD00DC44F2 /* Build configuration list for PBXNativeTarget "TimerTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +518,7 @@
 				AD5DB9171E569BCD00DC44F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD5DB9181E569BCD00DC44F2 /* Build configuration list for PBXNativeTarget "TimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +527,7 @@
 				AD5DB91A1E569BCD00DC44F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

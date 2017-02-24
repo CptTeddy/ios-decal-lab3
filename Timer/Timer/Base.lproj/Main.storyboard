@@ -21,25 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djz-Fo-f18">
-                                <rect key="frame" x="75" y="96" width="225" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djz-Fo-f18">
+                                <rect key="frame" x="80" y="96" width="215" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpb-zf-o5a">
-                                <rect key="frame" x="75" y="528" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpb-zf-o5a">
+                                <rect key="frame" x="80" y="520" width="45" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Sl-XI-t9x"/>
+                                    <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9u-dI-KUB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugp-ER-ZD6">
-                                <rect key="frame" x="246" y="528" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugp-ER-ZD6">
+                                <rect key="frame" x="250" y="520" width="45" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Stop"/>
                                 <connections>
@@ -48,9 +45,19 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ugp-ER-ZD6" firstAttribute="leading" secondItem="Fpb-zf-o5a" secondAttribute="trailing" constant="125" id="DVI-kf-SLS"/>
+                            <constraint firstItem="Fpb-zf-o5a" firstAttribute="height" secondItem="ugp-ER-ZD6" secondAttribute="height" id="FPC-Sv-qFp"/>
+                            <constraint firstItem="Fpb-zf-o5a" firstAttribute="width" secondItem="ugp-ER-ZD6" secondAttribute="width" id="G2y-E6-fu9"/>
+                            <constraint firstItem="ugp-ER-ZD6" firstAttribute="trailing" secondItem="djz-Fo-f18" secondAttribute="trailing" id="I2W-O3-GWx"/>
+                            <constraint firstItem="Fpb-zf-o5a" firstAttribute="leading" secondItem="djz-Fo-f18" secondAttribute="leading" id="MV1-jI-pmV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fpb-zf-o5a" secondAttribute="bottom" constant="109" id="S0q-zh-tNJ"/>
+                            <constraint firstItem="djz-Fo-f18" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cWv-De-ySZ"/>
+                            <constraint firstItem="djz-Fo-f18" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="76" id="gnV-mO-zc3"/>
+                            <constraint firstItem="Fpb-zf-o5a" firstAttribute="centerY" secondItem="ugp-ER-ZD6" secondAttribute="centerY" id="zuE-rh-eWR"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="Stopwatch" destination="djz-Fo-f18" id="MIm-gO-RlZ"/>
                         <outlet property="display" destination="djz-Fo-f18" id="yew-ka-vd6"/>
                     </connections>
                 </viewController>
